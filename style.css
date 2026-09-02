@@ -1,0 +1,983 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --azul: #2457a6;
+    --azul-escuro: #173d78;
+    --azul-claro: #eaf2ff;
+
+    --verde: #26865c;
+    --verde-claro: #e8f7ef;
+
+    --vermelho: #c93636;
+    --vermelho-claro: #ffeded;
+
+    --amarelo: #f4b942;
+    --amarelo-claro: #fff7df;
+
+    --branco: #ffffff;
+
+    --cinza-claro: #f5f7fa;
+    --cinza: #667085;
+    --cinza-escuro: #303846;
+
+    --borda: #d5dbe5;
+
+    --sombra: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    --raio: 18px;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--cinza-claro);
+
+    color: var(--cinza-escuro);
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+
+    background-color: var(--branco);
+
+    min-height: 90px;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--borda);
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.icone-logo {
+
+    width: 58px;
+    height: 58px;
+
+    background-color: var(--azul-claro);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+
+.logo h1 {
+
+    color: var(--azul-escuro);
+
+    font-size: 25px;
+}
+
+
+.logo p {
+
+    color: var(--cinza);
+
+    font-size: 14px;
+}
+
+
+.botao-acessibilidade {
+
+    background-color: var(--azul-claro);
+
+    color: var(--azul-escuro);
+
+    border: 2px solid var(--azul);
+
+    border-radius: 10px;
+
+    padding: 12px 18px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.botao-acessibilidade:hover {
+
+    background-color: var(--azul);
+
+    color: white;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 35px auto 60px;
+}
+
+
+/* =========================================
+   PROGRESSO
+========================================= */
+
+.progresso {
+
+    margin-bottom: 25px;
+}
+
+
+.progresso-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: var(--cinza);
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.barra-progresso {
+
+    height: 12px;
+
+    background-color: #dfe4eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.progresso-preenchido {
+
+    width: 0%;
+
+    height: 100%;
+
+    background-color: var(--verde);
+
+    border-radius: 20px;
+
+    transition: width 0.5s;
+}
+
+
+/* =========================================
+   TELAS
+========================================= */
+
+.tela {
+
+    background-color: white;
+
+    border-radius: var(--raio);
+
+    padding: 45px;
+
+    box-shadow: var(--sombra);
+}
+
+
+.escondido {
+
+    display: none !important;
+}
+
+
+/* =========================================
+   TEMA
+========================================= */
+
+#telaInformacao {
+
+    text-align: center;
+}
+
+
+.icone-tema {
+
+    width: 100px;
+
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: #fff0e7;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+
+.categoria {
+
+    display: inline-block;
+
+    color: var(--azul);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+#tituloTema {
+
+    color: var(--azul-escuro);
+
+    font-size: 35px;
+
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CONTEÚDO INFORMATIVO
+========================================= */
+
+.conteudo-informativo {
+
+    text-align: left;
+
+    max-width: 760px;
+
+    margin: auto;
+}
+
+
+.conteudo-informativo p {
+
+    margin-bottom: 20px;
+
+    font-size: 19px;
+}
+
+
+.conteudo-informativo h3 {
+
+    color: var(--azul-escuro);
+
+    font-size: 23px;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   CARTÃO INFORMAÇÃO
+========================================= */
+
+.cartao-informacao {
+
+    background-color: var(--amarelo-claro);
+
+    border-left: 6px solid var(--amarelo);
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    margin: 25px 0;
+}
+
+
+.cartao-informacao h3 {
+
+    color: #765600;
+
+    font-size: 21px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   DICA
+========================================= */
+
+.dica {
+
+    display: flex;
+
+    gap: 15px;
+
+    text-align: left;
+
+    padding: 20px;
+
+    background-color: var(--verde-claro);
+
+    border-radius: 12px;
+
+    margin-bottom: 30px;
+}
+
+
+.dica > span {
+
+    font-size: 28px;
+}
+
+
+.dica strong {
+
+    color: var(--verde);
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+.dica p {
+
+    color: #3f5f50;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.botao-principal {
+
+    border: none;
+
+    background-color: var(--azul);
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    padding: 17px 35px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    min-height: 58px;
+
+    transition: 0.2s;
+}
+
+
+.botao-principal:hover {
+
+    background-color: var(--azul-escuro);
+
+    transform: translateY(-2px);
+}
+
+
+.botao-principal:focus {
+
+    outline: 4px solid var(--amarelo);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   CABEÇALHO DO JOGO
+========================================= */
+
+.cabecalho-jogo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.cabecalho-jogo h2 {
+
+    color: var(--azul-escuro);
+
+    font-size: 30px;
+}
+
+
+.pontuacao {
+
+    background-color: var(--amarelo-claro);
+
+    color: #765600;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+.instrucao {
+
+    color: var(--cinza);
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   PERGUNTA
+========================================= */
+
+.pergunta {
+
+    padding: 25px 0;
+
+    border-top: 1px solid var(--borda);
+}
+
+
+.numero-pergunta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+.numero {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: var(--azul);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+.dica-palavra {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: var(--cinza-escuro);
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   QUADRINHOS
+========================================= */
+
+.palavra {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.palavra input {
+
+    width: 45px;
+
+    height: 50px;
+
+    border: 2px solid #aeb7c5;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    text-align: center;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    color: var(--azul-escuro);
+}
+
+
+.palavra input:focus {
+
+    border-color: var(--azul);
+
+    outline: 4px solid #f4b942;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   RESULTADO DE CADA PALAVRA
+========================================= */
+
+.resposta-status {
+
+    margin-top: 12px;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    display: none;
+}
+
+
+.resposta-status.certo {
+
+    display: block;
+
+    color: var(--verde);
+
+    background-color: var(--verde-claro);
+}
+
+
+.resposta-status.errado {
+
+    display: block;
+
+    color: var(--vermelho);
+
+    background-color: var(--vermelho-claro);
+}
+
+
+/* =========================================
+   RESULTADO FINAL
+========================================= */
+
+.resultado-jogo {
+
+    padding: 20px;
+
+    margin: 25px 0;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+.resultado-jogo.sucesso {
+
+    background-color: var(--verde-claro);
+
+    color: var(--verde);
+}
+
+
+.resultado-jogo.erro {
+
+    background-color: var(--vermelho-claro);
+
+    color: var(--vermelho);
+}
+
+
+/* =========================================
+   CONCLUSÃO
+========================================= */
+
+.conclusao {
+
+    text-align: center;
+}
+
+
+.icone-conclusao {
+
+    font-size: 65px;
+
+    margin-bottom: 10px;
+}
+
+
+.conclusao h2 {
+
+    color: var(--verde);
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.texto-conclusao {
+
+    font-size: 20px;
+
+    color: var(--cinza);
+
+    margin-bottom: 25px;
+}
+
+
+.resultado {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: var(--amarelo-claro);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.resultado span {
+
+    font-size: 35px;
+}
+
+
+.resultado strong {
+
+    color: #765600;
+
+    font-size: 30px;
+}
+
+
+.resultado small {
+
+    color: var(--cinza);
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PRÓXIMO TEMA
+========================================= */
+
+.proximo-tema {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: left;
+
+    padding: 22px;
+
+    border: 2px solid var(--borda);
+
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.icone-proximo {
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: var(--azul-claro);
+
+    border-radius: 50%;
+
+    font-size: 32px;
+}
+
+
+.proximo-tema > div > span {
+
+    color: var(--azul);
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.proximo-tema h3 {
+
+    color: var(--azul-escuro);
+
+    font-size: 23px;
+
+    margin: 3px 0;
+}
+
+
+.proximo-tema p {
+
+    color: var(--cinza);
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: var(--azul-escuro);
+
+    color: white;
+}
+
+
+footer p:last-child {
+
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 650px) {
+
+    body {
+
+        font-size: 17px;
+    }
+
+
+    .cabecalho {
+
+        padding: 15px 5%;
+
+        gap: 15px;
+
+        align-items: flex-start;
+    }
+
+
+    .logo h1 {
+
+        font-size: 21px;
+    }
+
+
+    .logo p {
+
+        display: none;
+    }
+
+
+    .icone-logo {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 25px;
+    }
+
+
+    .botao-acessibilidade {
+
+        font-size: 14px;
+
+        padding: 10px;
+    }
+
+
+    main {
+
+        width: 94%;
+
+        margin-top: 25px;
+    }
+
+
+    .tela {
+
+        padding: 28px 20px;
+    }
+
+
+    #tituloTema {
+
+        font-size: 28px;
+    }
+
+
+    .conteudo-informativo p {
+
+        font-size: 18px;
+    }
+
+
+    .cabecalho-jogo {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .cabecalho-jogo h2 {
+
+        font-size: 27px;
+    }
+
+
+    .pontuacao {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .palavra input {
+
+        width: 38px;
+
+        height: 44px;
+
+        font-size: 23px;
+    }
+
+
+    .proximo-tema {
+
+        align-items: flex-start;
+    }
+
+
+    .botao-principal {
+
+        width: 100%;
+
+        font-size: 18px;
+    }
+}

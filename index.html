@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memória Ativa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <div class="logo">
+            <div class="icone-logo">🧠</div>
+
+            <div>
+                <h1>Memória Ativa</h1>
+                <p>Informação, aprendizado e diversão</p>
+            </div>
+        </div>
+
+        <button class="botao-acessibilidade">
+            ⚙️ Acessibilidade
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- PROGRESSO -->
+        <section class="progresso">
+
+            <div class="progresso-info">
+                <span id="numeroTema">Tema 1 de 2</span>
+                <span id="porcentagem">0%</span>
+            </div>
+
+            <div class="barra-progresso">
+                <div id="barra" class="progresso-preenchido"></div>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TELA DE INFORMAÇÃO
+        ====================================== -->
+
+        <section id="telaInformacao" class="tela">
+
+            <div id="iconeTema" class="icone-tema">
+                🚭
+            </div>
+
+            <span id="categoriaTema" class="categoria">
+                SAÚDE E BEM-ESTAR
+            </span>
+
+            <h2 id="tituloTema">
+                Tabagismo na terceira idade
+            </h2>
+
+            <div id="conteudoTema" class="conteudo-informativo">
+
+                <p>
+                    O tabagismo é uma doença causada pela dependência da nicotina,
+                    uma substância presente nos cigarros e em outros produtos derivados
+                    do tabaco.
+                </p>
+
+                <p>
+                    Para pessoas idosas, abandonar o cigarro pode trazer benefícios
+                    importantes para a saúde. Mesmo quem fuma há muitos anos pode
+                    melhorar sua qualidade de vida ao parar.
+                </p>
+
+                <h3>🚭 Por que parar de fumar?</h3>
+
+                <p>
+                    Parar de fumar pode ajudar a melhorar a respiração, reduzir a
+                    tosse e diminuir o risco de diversas doenças. Também pode melhorar
+                    a disposição para realizar atividades do dia a dia.
+                </p>
+
+                <h3>❤️ Cuide da sua saúde</h3>
+
+                <p>
+                    Se você fuma e deseja parar, procure ajuda de um profissional
+                    de saúde. Não é necessário fazer isso sozinho. Existem tratamentos
+                    e orientações que podem ajudar no processo.
+                </p>
+
+            </div>
+
+
+            <div class="cartao-informacao">
+
+                <h3>💡 Você sabia?</h3>
+
+                <p>
+                    Nunca é tarde para parar de fumar. Abandonar o cigarro pode
+                    trazer benefícios para a saúde em qualquer idade.
+                </p>
+
+            </div>
+
+
+            <div class="dica">
+
+                <span>⭐</span>
+
+                <div>
+                    <strong>Importante</strong>
+
+                    <p>
+                        As informações apresentadas são educativas.
+                        Para orientações específicas sobre sua saúde,
+                        procure um profissional.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <button id="botaoComecar" class="botao-principal">
+                Quero jogar! →
+            </button>
+
+        </section>
+
+
+        <!-- =====================================
+             TELA DO JOGO
+        ====================================== -->
+
+        <section id="telaJogo" class="tela escondido">
+
+            <div class="cabecalho-jogo">
+
+                <div>
+
+                    <span class="categoria">
+                        DESAFIO
+                    </span>
+
+                    <h2>Complete as palavras</h2>
+
+                </div>
+
+                <div id="pontuacao" class="pontuacao">
+                    ⭐ 0 pontos
+                </div>
+
+            </div>
+
+
+            <p class="instrucao">
+                Leia cada dica e escreva a palavra usando o teclado.
+                Ao digitar uma letra, o próximo espaço será selecionado automaticamente.
+            </p>
+
+
+            <!-- PERGUNTAS SERÃO INSERIDAS PELO JAVASCRIPT -->
+            <div id="perguntas"></div>
+
+
+            <div id="resultadoJogo" class="resultado-jogo escondido"></div>
+
+
+            <button id="botaoVerificar" class="botao-principal">
+                ✓ Verificar respostas
+            </button>
+
+        </section>
+
+
+        <!-- =====================================
+             TELA DE CONCLUSÃO
+        ====================================== -->
+
+        <section id="telaConclusao" class="tela conclusao escondido">
+
+            <div class="icone-conclusao">
+                🎉
+            </div>
+
+            <h2>Parabéns!</h2>
+
+            <p id="mensagemConclusao" class="texto-conclusao">
+                Você concluiu o desafio.
+            </p>
+
+
+            <div class="resultado">
+
+                <span>⭐</span>
+
+                <strong id="pontuacaoFinal">
+                    0 pontos
+                </strong>
+
+                <small>
+                    Continue aprendendo!
+                </small>
+
+            </div>
+
+
+            <div class="proximo-tema">
+
+                <span id="iconeProximo" class="icone-proximo">
+                    🛡️
+                </span>
+
+                <div>
+
+                    <span>
+                        PRÓXIMO TEMA
+                    </span>
+
+                    <h3 id="tituloProximo">
+                        Golpes na internet
+                    </h3>
+
+                    <p id="descricaoProximo">
+                        Aprenda a reconhecer golpes e proteger seus dados.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button id="botaoProximo" class="botao-principal">
+                Próximo tema →
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            <strong>Memória Ativa</strong> © 2026
+        </p>
+
+        <p>
+            Informação, aprendizado e diversão.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
