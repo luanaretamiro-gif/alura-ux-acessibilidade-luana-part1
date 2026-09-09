@@ -1,266 +1,262 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Memória Ativa</title>
+    <title>A Forca</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="cabecalho">
+    <!-- =========================
+         TELA INICIAL
+    ========================== -->
 
-        <div class="logo">
-            <div class="icone-logo">🧠</div>
+    <main class="tela tela-inicial" id="tela-inicial">
 
-            <div>
-                <h1>Memória Ativa</h1>
-                <p>Informação, aprendizado e diversão</p>
-            </div>
+        <div class="conteudo-inicial">
+
+            <h1>A FORCA</h1>
+
+            <p class="subtitulo">
+                Um jogo de palavras para se divertir
+            </p>
+
+            <button class="botao-principal">
+                JOGAR A FORCA
+            </button>
+
+            <button class="botao-secundario">
+                COMO JOGAR
+            </button>
+
         </div>
 
-        <button class="botao-acessibilidade">
-            ⚙️ Acessibilidade
-        </button>
-
-    </header>
+    </main>
 
 
-    <main>
+    <!-- =========================
+         TELA DE TEMAS
+    ========================== -->
 
-        <!-- PROGRESSO -->
-        <section class="progresso">
+    <main class="tela tela-temas" id="tela-temas">
 
-            <div class="progresso-info">
-                <span id="numeroTema">Tema 1 de 2</span>
-                <span id="porcentagem">0%</span>
-            </div>
+        <div class="cabecalho">
+            <button class="botao-voltar">← VOLTAR</button>
 
-            <div class="barra-progresso">
-                <div id="barra" class="progresso-preenchido"></div>
-            </div>
+            <h2>ESCOLHA UM TEMA</h2>
 
-        </section>
-
-
-        <!-- =====================================
-             TELA DE INFORMAÇÃO
-        ====================================== -->
-
-        <section id="telaInformacao" class="tela">
-
-            <div id="iconeTema" class="icone-tema">
-                🚭
-            </div>
-
-            <span id="categoriaTema" class="categoria">
-                SAÚDE E BEM-ESTAR
-            </span>
-
-            <h2 id="tituloTema">
-                Tabagismo na terceira idade
-            </h2>
-
-            <div id="conteudoTema" class="conteudo-informativo">
-
-                <p>
-                    O tabagismo é uma doença causada pela dependência da nicotina,
-                    uma substância presente nos cigarros e em outros produtos derivados
-                    do tabaco.
-                </p>
-
-                <p>
-                    Para pessoas idosas, abandonar o cigarro pode trazer benefícios
-                    importantes para a saúde. Mesmo quem fuma há muitos anos pode
-                    melhorar sua qualidade de vida ao parar.
-                </p>
-
-                <h3>🚭 Por que parar de fumar?</h3>
-
-                <p>
-                    Parar de fumar pode ajudar a melhorar a respiração, reduzir a
-                    tosse e diminuir o risco de diversas doenças. Também pode melhorar
-                    a disposição para realizar atividades do dia a dia.
-                </p>
-
-                <h3>❤️ Cuide da sua saúde</h3>
-
-                <p>
-                    Se você fuma e deseja parar, procure ajuda de um profissional
-                    de saúde. Não é necessário fazer isso sozinho. Existem tratamentos
-                    e orientações que podem ajudar no processo.
-                </p>
-
-            </div>
+            <p>
+                Escolha o assunto das palavras
+            </p>
+        </div>
 
 
-            <div class="cartao-informacao">
+        <div class="temas">
 
-                <h3>💡 Você sabia?</h3>
-
-                <p>
-                    Nunca é tarde para parar de fumar. Abandonar o cigarro pode
-                    trazer benefícios para a saúde em qualquer idade.
-                </p>
-
-            </div>
-
-
-            <div class="dica">
-
-                <span>⭐</span>
-
-                <div>
-                    <strong>Importante</strong>
-
-                    <p>
-                        As informações apresentadas são educativas.
-                        Para orientações específicas sobre sua saúde,
-                        procure um profissional.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <button id="botaoComecar" class="botao-principal">
-                Quero jogar! →
+            <button class="tema">
+                <span class="icone">🍎</span>
+                <span>COMIDAS</span>
             </button>
 
-        </section>
-
-
-        <!-- =====================================
-             TELA DO JOGO
-        ====================================== -->
-
-        <section id="telaJogo" class="tela escondido">
-
-            <div class="cabecalho-jogo">
-
-                <div>
-
-                    <span class="categoria">
-                        DESAFIO
-                    </span>
-
-                    <h2>Complete as palavras</h2>
-
-                </div>
-
-                <div id="pontuacao" class="pontuacao">
-                    ⭐ 0 pontos
-                </div>
-
-            </div>
-
-
-            <p class="instrucao">
-                Leia cada dica e escreva a palavra usando o teclado.
-                Ao digitar uma letra, o próximo espaço será selecionado automaticamente.
-            </p>
-
-
-            <!-- PERGUNTAS SERÃO INSERIDAS PELO JAVASCRIPT -->
-            <div id="perguntas"></div>
-
-
-            <div id="resultadoJogo" class="resultado-jogo escondido"></div>
-
-
-            <button id="botaoVerificar" class="botao-principal">
-                ✓ Verificar respostas
+            <button class="tema">
+                <span class="icone">🐶</span>
+                <span>ANIMAIS</span>
             </button>
 
-        </section>
+            <button class="tema">
+                <span class="icone">🌳</span>
+                <span>NATUREZA</span>
+            </button>
+
+            <button class="tema">
+                <span class="icone">🏠</span>
+                <span>OBJETOS</span>
+            </button>
+
+            <button class="tema">
+                <span class="icone">🚗</span>
+                <span>VEÍCULOS</span>
+            </button>
+
+            <button class="tema">
+                <span class="icone">👕</span>
+                <span>ROUPAS</span>
+            </button>
+
+            <button class="tema">
+                <span class="icone">🎵</span>
+                <span>MÚSICA</span>
+            </button>
+
+            <button class="tema">
+                <span class="icone">🌎</span>
+                <span>LUGARES</span>
+            </button>
+
+        </div>
+
+    </main>
 
 
-        <!-- =====================================
-             TELA DE CONCLUSÃO
-        ====================================== -->
+    <!-- =========================
+         TELA DO JOGO
+    ========================== -->
 
-        <section id="telaConclusao" class="tela conclusao escondido">
+    <main class="tela tela-jogo" id="tela-jogo">
 
-            <div class="icone-conclusao">
-                🎉
-            </div>
+        <header class="cabecalho-jogo">
 
-            <h2>Parabéns!</h2>
+            <button class="botao-voltar">
+                ← TEMAS
+            </button>
 
-            <p id="mensagemConclusao" class="texto-conclusao">
-                Você concluiu o desafio.
-            </p>
+            <div class="informacoes">
 
-
-            <div class="resultado">
-
-                <span>⭐</span>
-
-                <strong id="pontuacaoFinal">
-                    0 pontos
-                </strong>
-
-                <small>
-                    Continue aprendendo!
-                </small>
-
-            </div>
-
-
-            <div class="proximo-tema">
-
-                <span id="iconeProximo" class="icone-proximo">
-                    🛡️
+                <span class="tema-atual">
+                    🍎 COMIDAS
                 </span>
 
-                <div>
+                <span class="contador">
+                    PALAVRA 1 DE 10
+                </span>
 
-                    <span>
-                        PRÓXIMO TEMA
-                    </span>
+            </div>
 
-                    <h3 id="tituloProximo">
-                        Golpes na internet
-                    </h3>
+        </header>
 
-                    <p id="descricaoProximo">
-                        Aprenda a reconhecer golpes e proteger seus dados.
-                    </p>
+
+        <section class="area-jogo">
+
+
+            <!-- LETRAS USADAS -->
+
+            <aside class="letras-usadas">
+
+                <h3>LETRAS USADAS</h3>
+
+                <div class="lista-letras">
+                    <span>B</span>
+                    <span>C</span>
+                    <span>R</span>
+                </div>
+
+            </aside>
+
+
+            <!-- DESENHO DA FORCA -->
+
+            <div class="forca">
+
+                <div class="estrutura-forca">
+
+                    <div class="poste-vertical"></div>
+
+                    <div class="poste-horizontal"></div>
+
+                    <div class="suporte"></div>
+
+                    <div class="corda"></div>
+
+                </div>
+
+
+                <!-- BONECO -->
+
+                <div class="boneco">
+
+                    <div class="cabeca"></div>
+
+                    <div class="corpo"></div>
+
+                    <div class="braco-esquerdo"></div>
+
+                    <div class="braco-direito"></div>
+
+                    <div class="perna-esquerda"></div>
+
+                    <div class="perna-direita"></div>
 
                 </div>
 
             </div>
 
 
-            <button id="botaoProximo" class="botao-principal">
-                Próximo tema →
-            </button>
+            <!-- PALAVRA -->
+
+            <div class="palavra">
+
+                <span>_</span>
+                <span>A</span>
+                <span>_</span>
+                <span>A</span>
+                <span>_</span>
+                <span>A</span>
+
+            </div>
+
+
+            <!-- TECLADO -->
+
+            <section class="teclado">
+
+                <div class="linha-teclado">
+
+                    <button>A</button>
+                    <button>B</button>
+                    <button>C</button>
+                    <button>D</button>
+                    <button>E</button>
+                    <button>F</button>
+                    <button>G</button>
+
+                </div>
+
+
+                <div class="linha-teclado">
+
+                    <button>H</button>
+                    <button>I</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+                    <button>M</button>
+                    <button>N</button>
+
+                </div>
+
+
+                <div class="linha-teclado">
+
+                    <button>O</button>
+                    <button>P</button>
+                    <button>Q</button>
+                    <button>R</button>
+                    <button>S</button>
+                    <button>T</button>
+                    <button>U</button>
+
+                </div>
+
+
+                <div class="linha-teclado">
+
+                    <button>V</button>
+                    <button>W</button>
+                    <button>X</button>
+                    <button>Y</button>
+                    <button>Z</button>
+
+                </div>
+
+            </section>
 
         </section>
 
     </main>
 
-
-    <footer>
-
-        <p>
-            <strong>Memória Ativa</strong> © 2026
-        </p>
-
-        <p>
-            Informação, aprendizado e diversão.
-        </p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
 </body>
-
 </html>
