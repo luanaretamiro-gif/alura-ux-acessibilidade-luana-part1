@@ -3,260 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>A Forca</title>
-
+    <meta name="description" content="Aprenda a identificar golpes na internet e a navegar com segurança.">
+    <title>Internet Segura 60+ | Proteção digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Fundo Moderno com Objetos 3D Flutuantes -->
+    <div class="fundo-3d-container" aria-hidden="true">
+        <!-- Bengala 3D 1 -->
+        <svg class="objeto-3d bengala-1" viewBox="0 0 100 200">
+            <defs>
+                <linearGradient id="gradBengala1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff9a9e" />
+                    <stop offset="50%" stop-color="#fecfef" />
+                    <stop offset="100%" stop-color="#a1c4fd" />
+                </linearGradient>
+            </defs>
+            <path d="M 30,170 L 30,70 A 25,25 0 0,1 80,70 L 80,85" stroke="url(#gradBengala1)" stroke-width="18" fill="none" stroke-linecap="round"/>
+        </svg>
 
-    <!-- =========================
-         TELA INICIAL
-    ========================== -->
+        <!-- Dentadura 3D 1 (Refatorada no estilo real) -->
+        <svg class="objeto-3d dentadura-1" viewBox="0 0 220 180">
+            <defs>
+                <linearGradient id="gradGengiva" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ff7b93" />
+                    <stop offset="50%" stop-color="#ef476f" />
+                    <stop offset="100%" stop-color="#c1121f" />
+                </linearGradient>
 
-    <main class="tela tela-inicial" id="tela-inicial">
+                <linearGradient id="gradDente" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="85%" stop-color="#f8fafc" />
+                    <stop offset="100%" stop-color="#e2e8f0" />
+                </linearGradient>
 
-        <div class="conteudo-inicial">
+                <filter id="sombraDente" x="-10%" y="-10%" width="120%" height="120%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="1" flood-opacity="0.3"/>
+                </filter>
+            </defs>
 
-            <h1>A FORCA</h1>
+            <!-- Gengiva Superior (Céu da boca) -->
+            <path d="M 30,85 C 30,25 60,10 110,10 C 160,10 190,25 190,85 C 175,70 145,55 110,55 C 75,55 45,70 30,85 Z" fill="url(#gradGengiva)"/>
+            <path d="M 25,85 C 25,45 65,30 110,30 C 155,30 195,45 195,85 C 175,72 145,62 110,62 C 75,62 45,72 25,85 Z" fill="#ff9ebb" opacity="0.6"/>
 
-            <p class="subtitulo">
-                Um jogo de palavras para se divertir
-            </p>
+            <!-- Gengiva Inferior -->
+            <path d="M 25,105 C 45,120 75,135 110,135 C 145,135 175,120 195,105 C 190,150 155,165 110,165 C 65,165 30,150 25,105 Z" fill="url(#gradGengiva)"/>
 
-            <button class="botao-principal">
-                JOGAR A FORCA
-            </button>
+            <!-- Dentes Superiores -->
+            <g fill="url(#gradDente)" filter="url(#sombraDente)">
+                <rect x="101" y="60" width="18" height="28" rx="4" />
+                <rect x="81"  y="60" width="18" height="28" rx="4" />
+                <rect x="121" y="62" width="15" height="25" rx="3" />
+                <rect x="64"  y="62" width="15" height="25" rx="3" />
+                <path d="M 138,64 L 151,64 L 148,87 L 138,85 Z" />
+                <path d="M 49,64 L 62,64 L 62,85 L 52,87 Z" />
+                <rect x="150" y="66" width="13" height="20" rx="3" />
+                <rect x="37"  y="66" width="13" height="20" rx="3" />
+                <rect x="164" y="68" width="12" height="17" rx="3" />
+                <rect x="24"  y="68" width="12" height="17" rx="3" />
+            </g>
 
-            <button class="botao-secundario">
-                COMO JOGAR
-            </button>
+            <!-- Dentes Inferiores -->
+            <g fill="url(#gradDente)" filter="url(#sombraDente)">
+                <rect x="101" y="90" width="17" height="25" rx="3" />
+                <rect x="82"  y="90" width="17" height="25" rx="3" />
+                <rect x="120" y="88" width="14" height="24" rx="3" />
+                <rect x="66"  y="88" width="14" height="24" rx="3" />
+                <path d="M 136,87 L 148,87 L 145,108 L 136,106 Z" />
+                <path d="M 52,87 L 64,87 L 64,106 L 55,108 Z" />
+                <rect x="147" y="86" width="13" height="19" rx="3" />
+                <rect x="39"  y="86" width="13" height="19" rx="3" />
+                <rect x="160" y="85" width="12" height="16" rx="2" />
+                <rect x="27"  y="85" width="12" height="16" rx="2" />
+            </g>
+        </svg>
 
+        <!-- Bengala 3D 2 -->
+        <svg class="objeto-3d bengala-2" viewBox="0 0 100 200">
+            <defs>
+                <linearGradient id="gradBengala2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#667eea" />
+                    <stop offset="100%" stop-color="#764ba2" />
+                </linearGradient>
+            </defs>
+            <path d="M 30,170 L 30,70 A 25,25 0 0,1 80,70 L 80,85" stroke="url(#gradBengala2)" stroke-width="18" fill="none" stroke-linecap="round"/>
+        </svg>
+
+        <!-- Dentadura 3D 2 (Estilo real) -->
+        <svg class="objeto-3d dentadura-2" viewBox="0 0 220 180">
+            <!-- Gengiva Superior -->
+            <path d="M 30,85 C 30,25 60,10 110,10 C 160,10 190,25 190,85 C 175,70 145,55 110,55 C 75,55 45,70 30,85 Z" fill="url(#gradGengiva)"/>
+            <path d="M 25,85 C 25,45 65,30 110,30 C 155,30 195,45 195,85 C 175,72 145,62 110,62 C 75,62 45,72 25,85 Z" fill="#ff9ebb" opacity="0.6"/>
+
+            <!-- Gengiva Inferior -->
+            <path d="M 25,105 C 45,120 75,135 110,135 C 145,135 175,120 195,105 C 190,150 155,165 110,165 C 65,165 30,150 25,105 Z" fill="url(#gradGengiva)"/>
+
+            <!-- Dentes Superiores -->
+            <g fill="url(#gradDente)" filter="url(#sombraDente)">
+                <rect x="101" y="60" width="18" height="28" rx="4" />
+                <rect x="81"  y="60" width="18" height="28" rx="4" />
+                <rect x="121" y="62" width="15" height="25" rx="3" />
+                <rect x="64"  y="62" width="15" height="25" rx="3" />
+                <path d="M 138,64 L 151,64 L 148,87 L 138,85 Z" />
+                <path d="M 49,64 L 62,64 L 62,85 L 52,87 Z" />
+                <rect x="150" y="66" width="13" height="20" rx="3" />
+                <rect x="37"  y="66" width="13" height="20" rx="3" />
+                <rect x="164" y="68" width="12" height="17" rx="3" />
+                <rect x="24"  y="68" width="12" height="17" rx="3" />
+            </g>
+
+            <!-- Dentes Inferiores -->
+            <g fill="url(#gradDente)" filter="url(#sombraDente)">
+                <rect x="101" y="90" width="17" height="25" rx="3" />
+                <rect x="82"  y="90" width="17" height="25" rx="3" />
+                <rect x="120" y="88" width="14" height="24" rx="3" />
+                <rect x="66"  y="88" width="14" height="24" rx="3" />
+                <path d="M 136,87 L 148,87 L 145,108 L 136,106 Z" />
+                <path d="M 52,87 L 64,87 L 64,106 L 55,108 Z" />
+                <rect x="147" y="86" width="13" height="19" rx="3" />
+                <rect x="39"  y="86" width="13" height="19" rx="3" />
+                <rect x="160" y="85" width="12" height="16" rx="2" />
+                <rect x="27"  y="85" width="12" height="16" rx="2" />
+            </g>
+        </svg>
+    </div>
+
+    <a class="skip-link" href="#conteudo">
+        Saltar para o conteúdo principal
+    </a>
+
+    <header class="cabecalho">
+        <div class="container topo">
+            <a class="marca" href="#inicio" aria-label="Internet Segura 60+, página inicial">
+                <span class="marca-icone" aria-hidden="true">🔒</span>
+                <span>Internet <strong>Segura 60+</strong></span>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <a href="#golpes">Tipos de golpes</a>
+                <a href="#dicas">Dicas de segurança</a>
+                <a href="#ajuda">Pedir ajuda</a>
+            </nav>
         </div>
+    </header>
 
-    </main>
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <div class="container hero-conteudo">
+                <div class="hero-texto">
+                    <span class="etiqueta">SEGURANÇA DIGITAL PARA TODOS</span>
 
+                    <h1>Use a internet com mais confiança e segurança!</h1>
 
-    <!-- =========================
-         TELA DE TEMAS
-    ========================== -->
+                    <p>
+                        A internet aproxima pessoas, facilita pagamentos e ajuda
+                        a resolver tarefas do dia a dia. Aprenda a reconhecer
+                        mensagens falsas e a proteger o seu dinheiro e os seus dados.
+                    </p>
 
-    <main class="tela tela-temas" id="tela-temas">
+                    <a class="botao botao-principal" href="#golpes">
+                        Conhecer os golpes
+                    </a>
+                </div>
 
-        <div class="cabecalho">
-            <button class="botao-voltar">← VOLTAR</button>
-
-            <h2>ESCOLHA UM TEMA</h2>
-
-            <p>
-                Escolha o assunto das palavras
-            </p>
-        </div>
-
-
-        <div class="temas">
-
-            <button class="tema">
-                <span class="icone">🍎</span>
-                <span>COMIDAS</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">🐶</span>
-                <span>ANIMAIS</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">🌳</span>
-                <span>NATUREZA</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">🏠</span>
-                <span>OBJETOS</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">🚗</span>
-                <span>VEÍCULOS</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">👕</span>
-                <span>ROUPAS</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">🎵</span>
-                <span>MÚSICA</span>
-            </button>
-
-            <button class="tema">
-                <span class="icone">🌎</span>
-                <span>LUGARES</span>
-            </button>
-
-        </div>
-
-    </main>
-
-
-    <!-- =========================
-         TELA DO JOGO
-    ========================== -->
-
-    <main class="tela tela-jogo" id="tela-jogo">
-
-        <header class="cabecalho-jogo">
-
-            <button class="botao-voltar">
-                ← TEMAS
-            </button>
-
-            <div class="informacoes">
-
-                <span class="tema-atual">
-                    🍎 COMIDAS
-                </span>
-
-                <span class="contador">
-                    PALAVRA 1 DE 10
-                </span>
-
+                <div class="hero-ilustracao" aria-hidden="true">
+                    <span class="escudo">✓</span>
+                    <div class="escudo-texto">
+                        <strong>A sua segurança importa!</strong>
+                        <p>Pare. Pense. Confirme.</p>
+                    </div>
+                </div>
             </div>
-
-        </header>
-
-
-        <section class="area-jogo">
-
-
-            <!-- LETRAS USADAS -->
-
-            <aside class="letras-usadas">
-
-                <h3>LETRAS USADAS</h3>
-
-                <div class="lista-letras">
-                    <span>B</span>
-                    <span>C</span>
-                    <span>R</span>
-                </div>
-
-            </aside>
-
-
-            <!-- DESENHO DA FORCA -->
-
-            <div class="forca">
-
-                <div class="estrutura-forca">
-
-                    <div class="poste-vertical"></div>
-
-                    <div class="poste-horizontal"></div>
-
-                    <div class="suporte"></div>
-
-                    <div class="corda"></div>
-
-                </div>
-
-
-                <!-- BONECO -->
-
-                <div class="boneco">
-
-                    <div class="cabeca"></div>
-
-                    <div class="corpo"></div>
-
-                    <div class="braco-esquerdo"></div>
-
-                    <div class="braco-direito"></div>
-
-                    <div class="perna-esquerda"></div>
-
-                    <div class="perna-direita"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PALAVRA -->
-
-            <div class="palavra">
-
-                <span>_</span>
-                <span>A</span>
-                <span>_</span>
-                <span>A</span>
-                <span>_</span>
-                <span>A</span>
-
-            </div>
-
-
-            <!-- TECLADO -->
-
-            <section class="teclado">
-
-                <div class="linha-teclado">
-
-                    <button>A</button>
-                    <button>B</button>
-                    <button>C</button>
-                    <button>D</button>
-                    <button>E</button>
-                    <button>F</button>
-                    <button>G</button>
-
-                </div>
-
-
-                <div class="linha-teclado">
-
-                    <button>H</button>
-                    <button>I</button>
-                    <button>J</button>
-                    <button>K</button>
-                    <button>L</button>
-                    <button>M</button>
-                    <button>N</button>
-
-                </div>
-
-
-                <div class="linha-teclado">
-
-                    <button>O</button>
-                    <button>P</button>
-                    <button>Q</button>
-                    <button>R</button>
-                    <button>S</button>
-                    <button>T</button>
-                    <button>U</button>
-
-                </div>
-
-
-                <div class="linha-teclado">
-
-                    <button>V</button>
-                    <button>W</button>
-                    <button>X</button>
-                    <button>Y</button>
-                    <button>Z</button>
-
-                </div>
-
-            </section>
-
         </section>
 
+        <section class="aviso">
+            <div class="container aviso-conteudo">
+                <span class="aviso-icone" aria-hidden="true">⚠</span>
+                <div>
+                    <h2>Recebeu uma mensagem suspeita?</h2>
+                    <p>
+                        Não clique em links, não partilhe códigos e não envie dinheiro
+                        antes de confirmar se o pedido é verdadeiro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao container" id="golpes">
+            <div class="titulo-secao">
+                <span class="etiqueta">FIQUE ATENTO</span>
+                <h2>Conheça os golpes mais comuns</h2>
+                <p>
+                    Clique nos cartões abaixo para destacar as informações detalhadas e dicas de proteção.
+                </p>
+            </div>
+
+            <div class="grelha">
+                <!-- Cartão 1 -->
+                <a href="#modal-whatsapp" class="cartao-link">
+                    <article class="cartao">
+                        <div class="cartao-icone icone-azul" aria-hidden="true">💬</div>
+                        <h3>Golpes no WhatsApp</h3>
+                        <p>Alguém finge ser um familiar ou amigo e pede dinheiro com urgência.</p>
+                        <span class="tag-clique">Clique para ver detalhes 🔍</span>
+                    </article>
+                </a>
+
+                <!-- Cartão 2 -->
+                <a href="#modal-banco" class="cartao-link">
+                    <article class="cartao">
+                        <div class="cartao-icone icone-verde" aria-hidden="true">🏦</div>
+                        <h3>Falsos funcionários do banco</h3>
+                        <p>Alguém liga a dizer que a sua conta está em risco e pede senhas ou códigos.</p>
+                        <span class="tag-clique">Clique para ver detalhes 🔍</span>
+                    </article>
+                </a>
+
+                <!-- Cartão 3 -->
+                <a href="#modal-lojas" class="cartao-link">
+                    <article class="cartao">
+                        <div class="cartao-icone icone-laranja" aria-hidden="true">🛒</div>
+                        <h3>Lojas e prémios falsos</h3>
+                        <p>Ofertas muito baratas ou prémios inesperados podem servir para roubar os seus dados.</p>
+                        <span class="tag-clique">Clique para ver detalhes 🔍</span>
+                    </article>
+                </a>
+
+                <!-- Cartão 4 -->
+                <a href="#modal-links" class="cartao-link">
+                    <article class="cartao">
+                        <div class="cartao-icone icone-roxo" aria-hidden="true">📩</div>
+                        <h3>Links e mensagens falsas</h3>
+                        <p>Mensagens dizem que uma encomenda está retida ou que precisa de atualizar os seus dados.</p>
+                        <span class="tag-clique">Clique para ver detalhes 🔍</span>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================== MODAIS CSS (Target) ==================== -->
+
+        <!-- Modal 1: WhatsApp -->
+        <div id="modal-whatsapp" class="modal-overlay">
+            <a href="#golpes" class="modal-fechar-area" aria-label="Fechar modal"></a>
+            <div class="modal-conteudo">
+                <a href="#golpes" class="btn-fechar" aria-label="Fechar">✕</a>
+                <div class="cartao-icone icone-azul" aria-hidden="true">💬</div>
+                <h2>Golpes no WhatsApp</h2>
+                <p>Alguém finge ser um familiar ou amigo (usando uma foto copiada da internet) e pede uma transferência de dinheiro urgente alegando emergência.</p>
+                <div class="modal-destaque">
+                    <h4>Como se proteger:</h4>
+                    <ul>
+                        <li>Ligue imediatamente para a pessoa pelo número de telefone tradicional que você já possui.</li>
+                        <li>Confirme o pedido pessoalmente ou por ligação antes de transferir qualquer valor.</li>
+                        <li>Nunca transfira dinheiro para contas em nome de terceiros desconhecidos.</li>
+                    </ul>
+                </div>
+                <a href="#golpes" class="botao botao-principal">Entendido, voltar</a>
+            </div>
+        </div>
+
+        <!-- Modal 2: Banco -->
+        <div id="modal-banco" class="modal-overlay">
+            <a href="#golpes" class="modal-fechar-area" aria-label="Fechar modal"></a>
+            <div class="modal-conteudo">
+                <a href="#golpes" class="btn-fechar" aria-label="Fechar">✕</a>
+                <div class="cartao-icone icone-verde" aria-hidden="true">🏦</div>
+                <h2>Falsos funcionários do banco</h2>
+                <p>O golpista liga afirmando que houve uma compra suspeita na sua conta e orienta você a realizar procedimentos de segurança falsos.</p>
+                <div class="modal-destaque">
+                    <h4>Como se proteger:</h4>
+                    <ul>
+                        <li>O banco NUNCA liga pedindo sua senha ou código de confirmação recebido no celular.</li>
+                        <li>Se receber a ligação, desligue imediatamente e ligue para o número do verso do seu cartão.</li>
+                        <li>Não instale aplicativos indicados por estranhos ao telefone ("suporte remoto").</li>
+                    </ul>
+                </div>
+                <a href="#golpes" class="botao botao-principal">Entendido, voltar</a>
+            </div>
+        </div>
+
+        <!-- Modal 3: Lojas -->
+        <div id="modal-lojas" class="modal-overlay">
+            <a href="#golpes" class="modal-fechar-area" aria-label="Fechar modal"></a>
+            <div class="modal-conteudo">
+                <a href="#golpes" class="btn-fechar" aria-label="Fechar">✕</a>
+                <div class="cartao-icone icone-laranja" aria-hidden="true">🛒</div>
+                <h2>Lojas e prémios falsos</h2>
+                <p>Anúncios com preços extremamente baixos em redes sociais criam sites parecidos com os de grandes lojas para roubar dados de cartão de crédito.</p>
+                <div class="modal-destaque">
+                    <h4>Como se proteger:</h4>
+                    <ul>
+                        <li>Pesquise a reputação da loja em sites como Reclame Aqui antes de comprar.</li>
+                        <li>Desconfie de prêmios que exigem pagamentos de frete antecipado.</li>
+                        <li>Confira com atenção o endereço do site (URL) na barra do navegador.</li>
+                    </ul>
+                </div>
+                <a href="#golpes" class="botao botao-principal">Entendido, voltar</a>
+            </div>
+        </div>
+
+        <!-- Modal 4: Links -->
+        <div id="modal-links" class="modal-overlay">
+            <a href="#golpes" class="modal-fechar-area" aria-label="Fechar modal"></a>
+            <div class="modal-conteudo">
+                <a href="#golpes" class="btn-fechar" aria-label="Fechar">✕</a>
+                <div class="cartao-icone icone-roxo" aria-hidden="true">📩</div>
+                <h2>Links e mensagens falsas</h2>
+                <p>Mensagens por SMS ou e-mail informando que uma encomenda dos Correios está retida ou que suas milhas vão expirar.</p>
+                <div class="modal-destaque">
+                    <h4>Como se proteger:</h4>
+                    <ul>
+                        <li>Não toque em links recebidos de números desconhecidos.</li>
+                        <li>Acesse o aplicativo oficial dos Correios ou da empresa para consultar suas entregas.</li>
+                        <li>Não faça downloads de arquivos anexados nessas mensagens.</li>
+                    </ul>
+                </div>
+                <a href="#golpes" class="botao botao-principal">Entendido, voltar</a>
+            </div>
+        </div>
+
+        <section class="secao secao-dicas" id="dicas">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="etiqueta">HÁBITOS IMPORTANTES</span>
+                    <h2>5 regras para navegar em segurança</h2>
+                    <p>Pequenos cuidados podem evitar grandes problemas.</p>
+                </div>
+
+                <ol class="lista-regras">
+                    <li>
+                        <span class="numero">1</span>
+                        <div>
+                            <h3>Proteja as suas senhas</h3>
+                            <p>Use senhas fortes e diferentes para cada conta. Nunca as partilhe.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numero">2</span>
+                        <div>
+                            <h3>Desconfie da urgência</h3>
+                            <p>Golpistas pressionam para que decida depressa. Pare e confirme.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numero">3</span>
+                        <div>
+                            <h3>Nunca partilhe códigos</h3>
+                            <p>Códigos recebidos por SMS ou aplicações podem dar acesso às suas contas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numero">4</span>
+                        <div>
+                            <h3>Mantenha os dispositivos atualizados</h3>
+                            <p>Atualize o telemóvel e as aplicações através das opções oficiais.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numero">5</span>
+                        <div>
+                            <h3>Peça ajuda sem vergonha</h3>
+                            <p>Converse com alguém de confiança antes de fazer pagamentos suspeitos.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="secao container" id="ajuda">
+            <div class="ajuda-cartao">
+                <div class="ajuda-icone" aria-hidden="true">🤝</div>
+                <div class="ajuda-texto">
+                    <span class="etiqueta">NÃO ESTÁ SOZINHO</span>
+                    <h2>Acha que foi vítima de um golpe?</h2>
+                    <p>
+                        Não tenha vergonha. Agir rapidamente pode ajudar a reduzir os prejuízos.
+                    </p>
+                    <ul>
+                        <li>Contacte imediatamente o seu banco se partilhou dados ou fez um pagamento.</li>
+                        <li>Altere as senhas comprometidas usando um dispositivo seguro.</li>
+                        <li>Guarde mensagens, comprovativos e capturas de ecrã.</li>
+                        <li>Denuncie o caso às autoridades policiais.</li>
+                    </ul>
+                    <a class="botao botao-secundario"
+                       href="https://www.gov.br/pf/pt-br"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Consultar a Polícia Federal
+                        <span class="sr-only">(abre num novo separador)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mensagem-final">
+            <div class="container">
+                <h2>Lembre-se: a pressa é inimiga da segurança.</h2>
+                <p>
+                    Pare, confirme a informação e só depois tome uma decisão.
+                    A sua segurança vem primeiro!
+                </p>
+                <a href="#inicio" class="botao botao-claro">Voltar ao início ↑</a>
+            </div>
+        </section>
     </main>
 
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Internet Segura 60+</strong> — Informação para uma internet mais segura.</p>
+            <p>Conteúdo educativo. Em caso de dúvida, procure os canais oficiais.</p>
+        </div>
+    </footer>
 </body>
 </html>
